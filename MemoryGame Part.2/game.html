@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Memory Game - Play</title>
+  <link rel="stylesheet" href="game.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">Memory Game</h1>
+      <nav>
+        <a href="InstructionGame.html" class="button">Instructions</a>
+      </nav>
+    </header>
+    <main>
+      <div class="gameboard">
+
+        <div class="tile" data-card-value="Green">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Green.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Superman">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Superman-removebg-preview (1).png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Shotgun">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Shotgun-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Girl8Bit">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Girl8Bit-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Coin">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Coin-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="SpiderMan">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="SpiderMan-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Character1">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Character1-removebg-preview (1).png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Superman">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Superman-removebg-preview (1).png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Green">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Green.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Heart">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Heart-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="SpiderMan">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="SpiderMan-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Character1">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Character1-removebg-preview (1).png" class="tile-image"></div>
+        </div>
+
+
+        <div class="tile" data-card-value="Shotgun">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Shotgun-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Girl8Bit">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Girl8Bit-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Coin">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Coin-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+        <div class="tile" data-card-value="Heart">
+          <div class="tile-before">?</div>
+          <div class="tile-after"><img src="Heart-removebg-preview.png" class="tile-image"></div>
+        </div>
+
+
+        <div class="timer" id="time"><span>00:00</span></div>
+        <div class="Moves" id="moves-count"><span>Moves:</span></div>
+        <div class="Score" id="score">Score:</div>
+
+      </div>
+      <div class="buttons">
+        <a href="title.html" class="quit-button">Quit Game</a>
+        <button class="StartBtn" id="start-button">Start Game</button>
+
+      </div>
+    </main>
+
+  </div>
+  <script src="MemoryGame.js">
+
+  </script>
+ 
+  <div id="MessageLost" class="MessageLost">
+    <div class="Message-content">
+      <span class="Close">&times;</span>
+      <h2>Time is out!</h2>
+      <p>You lost!</p>
+      <p>Better luck next time!</p>
+      <p id="Message-moves"></p>
+      <p id="Message-time"></p>
+      <button class="Play-again" id="PlayAgain">Play Again</button>
+    </div>
+  </div>
+  
+  <div id="MessageWon" class="MessageWon">
+    <div class="message-content">
+      <span class="close">&times;</span>
+      <h2>Congratulations!</h2>
+      <p>You won the game!</p>
+      <p id="message-moves"></p>
+      <p id="message-time"></p>
+      <button class="play-again" id="playAgain">Play Again</button>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <p>&copy; 2023 Memory Game</p>
+      <p>By: Viktor Bojoski</p>
+    </div>
+  </footer>
+</body>
+
+
+</html>

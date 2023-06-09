@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  line-height: 1.8;
+  background-color: #f6f6f6; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #030122;
+}
+
+a.button {
+  text-shadow: 0 0 3px rgb(4, 210, 246), 0 0 6px rgb(4, 210, 246), 0 0 9px rgb(4, 210, 246), 0 0 12px rgb(4, 210, 246), 0 0 18px rgb(4, 210, 246), 0 0 24px rgb(4, 210, 246);  
+  padding: 13.5px 20px;
+  background-color: #133e7c;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 2Opx;
+  font-weight: 550;
+  transition: all 0.4s ease;
+  animation: bounce 1s infinite;
+}
+a.button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 10px rgb(232, 3, 167);
+  animation: bounce 1s infinite;
+}
+
+nav {
+  display: flex;
+}
+nav a {
+  margin-left: 20px;
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+}
+nav a:hover {
+  color: #666;
+}
+
+main {
+  height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-image: url('Arcade.gif');
+  background-size: cover;
+}
+
+.banner {
+  width: 600px;
+    padding: 40px;
+  background-color: rgba(15, 1, 1, 0.576);
+  box-shadow: 0 0 10px rgb(232, 3, 167);
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+.banner h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #cdc9c9;
+  text-shadow: 0 0 10px rgb(232, 3, 167);
+}
+
+.banner p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #cdc9c9;
+  text-shadow: 0 0 10px rgb(232, 3, 167);
+}
+
+.Start-Button{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #133e7c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  text-shadow: 0 0 3px rgb(4, 210, 246), 0 0 6px rgb(4, 210, 246), 0 0 9px rgb(4, 210, 246), 0 0 12px rgb(4, 210, 246), 0 0 18px rgb(4, 210, 246), 0 0 24px rgb(4, 210, 246);  
+}
+
+.Start-Button:hover {
+  background-color: #ffffff;
+  color: #333; 
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #030122;
+  color: #fff;
+  font-size: 16px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
